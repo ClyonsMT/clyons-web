@@ -1,0 +1,345 @@
+body{ /* Animacion del fondo de la página con sus 5 colores */
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    
+    width: 100%;
+    display: block;
+
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(227, 177, 177) 0%,
+        rgb(158, 69, 69) 20%,
+        #d59a9a 40%,
+        rgb(203, 85, 85) 60%,
+        rgb(207, 135, 135) 80%
+    );
+
+    background-size: 200% 200%;
+
+    animation: movimiento 5s linear infinite alternate;
+}
+
+@keyframes movimiento {
+    from {
+        background-position: 0 0; 
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+.titulo-principal{     /* titulo principal y encabezado con su logo Clyons */
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.titulo-principal::selection{ /*No permite la seleccion del usuario al titulo */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.titulo-principal:hover{ /* cursor default al pasar por el titulo */
+    cursor: default;
+}
+header img{
+    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 0 0 1em;
+    padding: 15px 30px; 
+    
+}
+header{
+    background: #090707;
+    text-align: left;
+    width: auto;
+}
+.caja-principal{        /* parte principal caja para entrada y salida de mensaje*/
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    margin: 30px auto auto; /* 30px lado a lado */
+}
+.tarjeta1{ /* tarjetas */
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    height: 35em;
+    padding: 2px;
+    margin: 0 auto 0 auto;
+    
+}
+.tarjeta2{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 595px;
+    padding: 2px;
+    margin: 0 auto 0 auto; /*359px*/
+}
+#mensaje{
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: red;
+    border-width: 3px;
+    color: red;
+    resize: none;
+}
+.instrucciones{
+    margin: 10px 0;
+    font-size: 12px;
+}
+.instrucciones::selection{ /* instrucciones no seleccionable por el usuario */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.instrucciones:hover{ /* cursor por default en las instrucciones */
+    cursor: default;
+}
+#encriptar{
+    display: inline-block; 
+    position: relative;
+    top: 4px;
+    left: 300px;
+    margin-top: 10px; 
+    
+    width: 30%;
+    padding: 10px;
+    font-size: 15px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+
+    transition: 1s background;
+    cursor: pointer;
+}
+#encriptar:hover{
+    background: darkorange;
+}
+#desencriptar{
+    display: block;
+    margin-top: 10px;
+    bottom: 43px;
+
+    position: relative;
+    width: 30%;
+    padding: 10px;
+    font-size: 15px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+
+    transition: 1s background;
+    cursor: pointer;
+}
+#desencriptar:hover{
+    background: darkorange;
+} 
+#resultado{ 
+    height: 570px;
+    width: 380px;
+    font-size: 20px;
+    color: red;
+    border-radius: 10px;
+    border-width: 3px;
+    border: none;
+    resize: none;
+    outline: none;
+    background-image: url(imagenes/goku-msg.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 40px 0;
+}
+#resultado::selection{ /* Seleccion de texto del ususario en resultado */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#resultado:hover{
+    cursor: default;
+}
+.botones-segundarios{
+    display: flex;
+    margin: 5px 0;
+}
+#copiar{
+    margin-top: 10px;
+    
+    position: relative;
+    width: 30%;
+    padding: 10px;
+    font-size: 15px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+
+    transition: 1s background;
+    cursor: pointer;
+}
+#copiar:hover{
+    background: darkorange;
+}
+#escuchar{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 30%;
+    padding: 10px;
+  
+    font-size: 15px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+
+    transition: 1s background;
+    cursor: pointer;
+}
+#escuchar:hover{
+    background: darkorange;
+}
+footer{  /* pie de página */
+    background: url('imagenes/bg.jpg');
+    text-align: center;
+    padding: 30px;
+}
+.logo-piepagina{
+    max-width: 110px;
+    max-height: 110px;
+}
+.copyright{
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.insta, .linke{
+    max-width: 50px;
+    max-height: 50px; 
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: 1s;
+}
+.insta:hover,.linke:hover{
+    opacity: 0.6;
+    transition: 1s;
+}
+/* medias queries para resposive */
+@media screen and (max-width: 496px){
+    .tarjeta1{
+        display: flex;
+        flex-direction: column;
+        width: 20em;
+        height: 25em;
+        padding: 2px;
+        margin: 0 auto 0 auto;
+    }
+    .tarjeta2{
+        display: flex;
+    }
+    #desencriptar{
+        display: block;
+        margin: 10px 5px 0 0;
+        bottom: 43px;
+    
+        position: relative;
+        width: 34%;
+        padding: 10px;
+        font-size: 15px;
+        background: orange;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+    
+        transition: 1s background;
+        cursor: pointer;
+    }
+    #encriptar{
+        left: 200px
+    }
+    #resultado{
+        height: 570px;
+        width: 300px;
+        margin-left: 40px;
+        background-position: 5px 0;
+    }
+    .botones-segundarios{
+        margin: 5px 40px;
+    }
+}
+
+@media screen and (max-width: 357px){
+    .titulo-principal{     /* titulo principal y encabezado */
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    header img{
+        display: inline-block;
+        max-width: 60px;
+        max-height: 60px;
+        margin: 0 0 0 1em;
+        padding: 15px 30px;
+        
+    }
+    .tarjeta1{
+        display: flex;
+        flex-direction: column;
+        width: 15em;
+        height: 25em;
+        padding: 2px;
+        margin: 0 auto 0 auto;
+    }
+    .tarjeta2{
+        display: flex;
+    }
+    #desencriptar{
+        display: block;
+        margin: 10px 5px 0 0;
+        bottom: 43px;
+    
+        position: relative;
+        width: 45%;
+        padding: 10px;
+        font-size: 15px;
+        background: orange;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+    
+        transition: 1s background;
+        cursor: pointer;
+    }
+    #encriptar{
+        width: 35%;
+        left: 150px
+    }
+    #resultado{
+        height: 350px;
+        width: 200px;
+        margin-left: 10px;
+        background-position: 5px 0;
+        background-size: 190px;
+    }
+    .botones-segundarios{
+        margin: 5px 4px;
+    }
+}

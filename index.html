@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <title>Clyons Encriptador</title>
+        <link rel="shortcut icon" href="imagenes/clyons-espejos.png">
+    </head>
+    <body>
+        <header class="encabezado">
+            <img src="imagenes/clyons-espejos.png" alt="Logo de Clyons">
+            <p class="titulo-principal">Clyons Encriptador</p>
+        </header>
+        <main class="caja-principal">
+            <div class="tarjeta1">
+                <textarea cols="60" rows="23" id="mensaje" placeholder="Ingrese un mensaje aquí"></textarea>
+                <p class="instrucciones">⚠️ Solo letras minúsculas y sin acentos</p>
+                <div class="botones-principales">
+                    <button id="encriptar">Encriptar</button>
+                    <button id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            <div class="tarjeta2">
+                <textarea cols="30" rows="23" id="resultado" readonly></textarea>
+                <div class="botones-segundarios">
+                    <button id="copiar">Copiar</button>
+                    <button id="escuchar">Escuchar</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img src="imagenes/clyons-espejos.png" class="logo-piepagina">
+            <p class="copyright">&#169; Copyright Clyons Soporte - 2022</p>
+            <a href="https://www.instagram.com/merino_cl15/"><img src="imagenes/insta.png" alt="Logo de instagram" class="insta"></a>
+            <a href="https://www.linkedin.com/in/cl-lyon-merino-b27242246/"><img src="imagenes/Linke.png" alt="Logo de linkedin" class="linke"></a>
+        </footer>
+        <script src="codigo.js"></script>
+    </body>
+</html>

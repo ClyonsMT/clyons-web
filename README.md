@@ -1,8 +1,9 @@
 # 🥏Clyons-Web
 ## por Cristóbal Merino
----
+
 ✅Repositorio Clyons que adjunta un encriptador de mensajes en una página web✅
 
+---
 **📜INSTRUCCIONES DE USO📜**
 
 1. Ingresa un mensaje (en minúscula y sin acentos).
